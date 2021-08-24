@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InputField from "./InputField"
 
-class PracticalInfo extends Component {
+class PracticalInput extends Component {
 
     render() {
         return (
@@ -12,11 +12,10 @@ class PracticalInfo extends Component {
                 <InputField inputClass="dateInput" placeHolder="To..." type="date" />
                 <InputField inputClass="checkbox" type="checkbox" />
                 <label className="subtitle">Ongoing?</label>
-                <button className="addField">Add +</button>
             </div>
         );
     };
 
 }
 
-export default PracticalInfo;
+export default PracticalInput;

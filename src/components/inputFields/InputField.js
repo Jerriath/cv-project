@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import styles from "./inputStyles.css";
 
-class SmallInput extends Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {};
-    }
+class InputField extends Component {
 
     render() {
         return (
@@ -16,4 +10,4 @@ class SmallInput extends Component {
     };
 };
 
-export default SmallInput;
+export default InputField;

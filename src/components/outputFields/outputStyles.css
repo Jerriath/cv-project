@@ -40,3 +40,11 @@
     height: 2px;
     width: 80%;
 }
+
+.resumeComp {
+    width: 55%;
+    height: auto;
+    position: relative;
+    right: 0;
+    background-color: white;
+}

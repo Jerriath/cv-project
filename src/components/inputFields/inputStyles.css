@@ -53,3 +53,10 @@
 .addField:hover {
     border: 1px solid black;
 }
+
+.formComp {
+    width: 45%;
+    height: auto;
+    position: relative;
+    left: 0;
+}

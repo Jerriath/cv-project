@@ -25,17 +25,3 @@ body {
     width: 100%;
     background-color: rgb(230, 230, 230);
 }
-
-.left {
-    width: 45%;
-    height: auto;
-    position: relative;
-    left: 0;
-}
-
-.right {
-    width: 55%;
-    height: auto;
-    position: relative;
-    right: 0;
-}

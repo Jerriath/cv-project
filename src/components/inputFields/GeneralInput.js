@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InputField from "./InputField"
 
-class GeneralInfo extends Component {
+class GeneralInput extends Component {
 
     render() {
         return (
@@ -16,4 +16,4 @@ class GeneralInfo extends Component {
 
 }
 
-export default GeneralInfo;
+export default GeneralInput;
