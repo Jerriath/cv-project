@@ -1,0 +1,42 @@
+.testPage {
+    background-color: rgba(69, 69, 69, 0.2);
+    height: 100vh;
+    width: 100%;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+
+.userName {
+    margin: 0;
+    text-decoration: underline;
+    font-size: 30px
+}
+
+.userInfo {
+    display: inline-flex;
+    flex-direction: row;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.line {
+    color: black;
+    background-color: black;
+    height: 2px;
+    width: 80%;
+}

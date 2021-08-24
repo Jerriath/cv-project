@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "../../styles.css";
+import styles from "./inputStyles.css";
 
 class SmallInput extends Component {
 
@@ -11,7 +11,7 @@ class SmallInput extends Component {
 
     render() {
         return (
-            <input className="smallInput" placeholder={this.props.placeHolder} type={this.props.type}/>
+            <input className={this.props.inputClass} placeholder={this.props.placeHolder} type={this.props.type}/>
         );
     };
 };
