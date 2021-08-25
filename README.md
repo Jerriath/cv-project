@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# Introduction
+This application was created with the use of ReactJS via create-react-app as. This is the first application that I have create using ReactJS and the first time I am experiencing React style of separation of concerns. This application is used to create a CV/Resume by simply entering in a coupl inputs and relevant information needed for filling the document. The left side of the application deals with the inputs and the right side will display the CV/resume.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Build Process
+As mentioned before, the application is separated into two main parts; The left (input) side and the right (output) side. The file organization is designed to mirror this separation of concerns. Both of these component types (input and output) are then conglomerated in the App.js component and then rendered in index.js. This separation of concerns (in my opinion) is a much better design pattern than with vanilla javascript. Every component is extremely modular and can be plugged in and out of the application without concern
 
-## Available Scripts
+# Initial Build
+Initially, a static version of the final application was created to work out the styling and architecture of the application. This process of the project was used to design out the necessary components needed as well as fiddle with the auxilary components and to create new components if one got too big. 
 
-In the project directory, you can run:
+# React logic
+After the initial, static version was created, the logic and methods for each component was then implemented. States were used to store the relevant information that was entered into the input side of the application and then this information was then passed down as props to the output side and displayedo n the resume.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Final Comments
+As mentioned before, this was the first time for me experiencing the design pattern of React. Although there really isn't a strict pattern to follow, the architecture of React makes the design process and implementation process so much easier to understand. React helps to create a mental image of how the application is ran and how each part of the application communicates with the rest. No more finicky functions dealing with DOM manipulation. 

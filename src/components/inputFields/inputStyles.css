@@ -1,9 +1,43 @@
+/* Section deals with styling miscellenious elements and components */
+
+.subtitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 11% !important;
+    margin: 1%;
+    text-decoration: underline;
+}
+
+.addField {
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+    background-color: rgba(25, 0, 247, 0.3);
+    border: none;
+    cursor: pointer;
+    margin-left: 10%;
+    box-shadow: 2px 2px 2px grey;
+    border: 1px solid grey;
+}
+
+.addField:hover {
+    border: 1px solid black;
+}
+
+
+
+
+
+/* Section deals with styling all the input elements (most of the page) */
+
 .inputComponent {
-    width: 75%;
+    width: 78%;
     display: flexbox;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
+    background-color:rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 1%;
 }
 
 .label {
@@ -14,7 +48,7 @@
 
 .smallInput {
     height: 30px;
-    width: 100%;
+    width: 99%;
     background-color: rgb(230, 230, 230);
     margin: auto;
     margin-top: 2px;
@@ -71,26 +105,11 @@
     margin-top: 7px;
 }
 
-.subtitle {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10%;
-}
 
-.addField {
-    height: 40px;
-    width: 100px;
-    font-size: 25px;
-    background-color: rgba(25, 0, 247, 0.3);
-    border: none;
-    cursor: pointer;
-    margin-left: 10%;
-    box-shadow: 2px 2px 2px grey;
-    border: 1px solid grey;
-}
 
-.addField:hover {
-    border: 1px solid black;
-}
+
+
+/* Section deals with styling the form side as a whole */
 
 .formComp {
     width: 45%;
@@ -101,5 +120,5 @@
     margin-bottom: auto;
     background-color: rgba(7, 0, 59, 0.2);
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
 }
