@@ -14,7 +14,10 @@ class Resume extends Component {
                 <h2 className="sectionTitle">Education</h2>
                 <EducationOutput />
                 <hr className="line" />
+                <h2 className="sectionTitle">Work Experience</h2>
                 <PracticalOutput />
+                <PracticalOutput />
+                <hr className="line" />
             </div>
         );
     };

@@ -27,6 +27,10 @@
     font-size: 60%;
 }
 
+
+
+
+
 /* This section deals with the styling of the EducationOutput and it's children */
 
 .educationBlock {
@@ -47,6 +51,40 @@
     width: 35%;
     text-align: right;
 }
+
+
+
+
+/*This section deals with the sktyling of the PracticalOutput and it's children */
+
+.practicalBlock {
+    display: inline-flex;
+    flex-direction: row;
+    width: 94%;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1% 3%;
+}
+
+.pracLeft {
+    width: 78%;
+    position: relative;
+}
+
+.pracRight {
+    width: 22%;
+    text-align: right;
+}
+
+.jobDescription {
+    font-size: 10px !important;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+
 
 /* This section deals with styling used throughout the whole resume page */
 
@@ -79,6 +117,10 @@
     text-decoration: none;
     font-weight: 600;
 }
+
+
+
+
 
 /* This last section deals with styling the entire resume page as a whole */
 
