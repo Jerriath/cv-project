@@ -8,10 +8,14 @@ class PracticalInput extends Component {
             <div className="inputComponent">
                 <InputField placeHolder="Position or Occupation..." type="text" inputClass="smallInput" />
                 <InputField placeHolder="Company or Organization" type="text" inputClass="smallInput" />
-                <InputField inputClass="dateInput" placeHolder="From..." type="date" />
-                <InputField inputClass="dateInput" placeHolder="To..." type="date" />
-                <InputField inputClass="checkbox" type="checkbox" />
-                <label className="subtitle">Ongoing?</label>
+                <div className="dateSection" >
+                    <InputField inputClass="dateInput" type="date" labelClass="label" label="From: " />
+                    <InputField inputClass="dateInput" type="date" labelClass="label" label="To: " />
+                    <div className="boolean" >
+                        <InputField inputClass="checkbox" type="checkbox" />
+                        <label className="boxLabel">Ongoing?</label>
+                    </div>
+                </div>
             </div>
         );
     };

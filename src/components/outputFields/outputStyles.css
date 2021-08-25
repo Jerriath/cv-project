@@ -41,10 +41,22 @@
     width: 80%;
 }
 
-.resumeComp {
-    width: 55%;
+.outputBlock {
+    width: inherit;
     height: auto;
-    position: relative;
-    right: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+}
+
+.resumeComp {
+    width: 34vw;
+    height: 44vw;
+    position: fixed;
+    right: 7%;
+    top: 5%;
+    bottom: 5%;
+    margin: auto;
     background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
 }

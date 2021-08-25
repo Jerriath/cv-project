@@ -6,10 +6,10 @@ class GeneralInput extends Component {
     render() {
         return (
             <div className="inputComponent">
-                <InputField placeHolder="First Name..." type="text" inputClass="smallInput" />
-                <InputField placeHolder="Last Name..." type="text" inputClass="smallInput" />
-                <InputField placeHolder="Email..." type="email" inputClass="smallInput" />
-                <InputField placeHolder="Phone Number..." type="tel" inputClass="smallInput" />
+                <InputField type="text" inputClass="smallInput" labelClass="label" label="First Name: " />
+                <InputField type="text" inputClass="smallInput" labelClass="label" label="Last Name: " />
+                <InputField type="email" inputClass="smallInput" labelClass="label" label="Email: " />
+                <InputField type="tel" inputClass="smallInput" labelClass="label" label="Phone Number: " />
             </div>
         );
     };

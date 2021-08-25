@@ -5,7 +5,10 @@ class InputField extends Component {
 
     render() {
         return (
-            <input className={this.props.inputClass} placeholder={this.props.placeHolder} type={this.props.type}/>
+            <div className="inputField">
+                <label className={this.props.labelClass}>{this.props.label}</label>
+                <input className={this.props.inputClass} type={this.props.type}/>
+            </div>
         );
     };
 };

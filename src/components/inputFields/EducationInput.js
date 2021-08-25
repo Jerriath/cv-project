@@ -6,12 +6,16 @@ class EducationInput extends Component {
     render() {
         return (
             <div className="inputComponent">
-                <InputField inputClass="smallInput" placeHolder="Degree or Certificate..." type="text" />
-                <InputField inputClass="smallInput" placeHolder="Institute or Organization..." type="text" />
-                <InputField inputClass="dateInput" placeHolder="From..." type="date" />
-                <InputField inputClass="dateInput" placeHolder="To..." type="date" />
-                <InputField inputClass="checkbox" type="checkbox" />
-                <label className="subtitle">Ongoing?</label>
+                <InputField inputClass="smallInput" type="text" labelClass="label" label="Degree / Certificate: " />
+                <InputField inputClass="smallInput" type="text" labelClass="label" label="Insititute / Organization: " />
+                <div className="dateSection" >
+                    <InputField inputClass="dateInput" type="date" labelClass="label" label="From: " />
+                    <InputField inputClass="dateInput" type="date" labelClass="label" label="To: " />
+                    <div className="boolean" >
+                        <InputField inputClass="checkbox" type="checkbox" />
+                        <label className="boxLabel">Ongoing?</label>
+                    </div>
+                </div>
             </div>
         );
     };
