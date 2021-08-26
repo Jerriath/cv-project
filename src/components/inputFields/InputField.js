@@ -7,7 +7,7 @@ class InputField extends Component {
         return (
             <div className="inputField">
                 <label className={this.props.labelClass}>{this.props.label}</label>
-                <input className={this.props.inputClass} type={this.props.type}/>
+                <input className={this.props.inputClass} type={this.props.type} pattern={this.props.pattern} onChange={this.props.onChange} />
             </div>
         );
     };

@@ -6,8 +6,8 @@ class PracticalInput extends Component {
     render() {
         return (
             <div className="inputComponent">
-                <InputField placeHolder="Position or Occupation..." type="text" inputClass="smallInput" />
-                <InputField placeHolder="Company or Organization" type="text" inputClass="smallInput" />
+                <InputField type="text" inputClass="smallInput" labelClass="label" label="Occupation / Position: "/>
+                <InputField type="text" inputClass="smallInput" labelClass="label" label="Company / Organization: "/>
                 <div className="dateSection" >
                     <InputField inputClass="dateInput" type="date" labelClass="label" label="From: " />
                     <InputField inputClass="dateInput" type="date" labelClass="label" label="To: " />

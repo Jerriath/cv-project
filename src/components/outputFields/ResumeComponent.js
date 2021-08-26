@@ -8,10 +8,19 @@ import styles from "./outputStyles.css";
 
 class Resume extends Component {
 
+    constructor(props) {
+        super(props);
+    };
+
     render() {
         return (
             <div className="resumeComp">
-                <GeneralOutput />
+                <GeneralOutput 
+                    firstName={this.props.firstName}
+                    lastName={this.props.lastName}
+                    email={this.props.email}
+                    phone={this.props.phone}
+                />
                 <h2 className="sectionTitle">Education</h2>
                 <EducationOutput />
                 <hr className="line" />

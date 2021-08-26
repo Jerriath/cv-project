@@ -8,12 +8,20 @@ import styles from "./inputStyles.css";
 
 class FormComponent extends Component {
 
+    constructor(props) {
+        super(props)
+    }
 
     render() {
         return (
             <div className="formComp">
                 <h1 className="subtitle">General Info</h1>
-                <GeneralInput />
+                <GeneralInput 
+                    updateFirst={this.props.updateFirst}
+                    updateLast={this.props.updateLast}
+                    updateEmail={this.props.updateEmail}
+                    updatePhone={this.props.updatePhone}
+                />
                 <h1 className="subtitle">Education Info</h1>
                 <EducationInput />
                 <AddButton />
