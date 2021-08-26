@@ -22,4 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-git_push_key
+git_push_key.txt
+to_do_list.txt
