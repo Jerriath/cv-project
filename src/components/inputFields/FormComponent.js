@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import GeneralInput from "./GeneralInput";
 import EducationInput from "./EducationInput";
 import PracticalInput from "./PracticalInput";
+import SkillsInput from "./SkillsInput";
 import AddButton from "./AddButton";
 import styles from "./inputStyles.css";
 
@@ -18,6 +19,9 @@ class FormComponent extends Component {
                 <AddButton />
                 <h1 className="subtitle">Practical Info</h1>
                 <PracticalInput />
+                <AddButton />
+                <h1 className="subtitle">Additional Skills</h1>
+                <SkillsInput />
                 <AddButton />
             </div>
         );
