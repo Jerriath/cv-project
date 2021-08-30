@@ -1,27 +1,34 @@
 import FormComponent from "./components/inputFields/FormComponent";
 import ResumeComponent from "./components/outputFields/ResumeComponent";
+import EducationInput from "./components/inputFields/EducationInput";
+import PracticalInput from "./components/inputFields/PracticalInput";
 import styles from "./appStyles.css";
 import React, { Component } from "react";
-import { updateFirst, updateLast, updateEmail, updatePhone } from "./updateFunctions";
+import { updateFirst, updateLast, updateEmail, updatePhone, addEducation, addPractical, deleteEducation, deletePractical, addSkill } from "./updateFunctions";
 import { render } from "@testing-library/react";
 
 class App extends Component {
 
   constructor(props) {
     super(props);
+    this.updateFirst = updateFirst.bind(this);
+    this.updateLast = updateLast.bind(this);
+    this.updateEmail = updateEmail.bind(this);
+    this.updatePhone = updatePhone.bind(this);
+    this.addEducation = addEducation.bind(this);
+    this.addPractical = addPractical.bind(this);
+    this.deleteEducation = deleteEducation.bind(this);
+    this.deletePractical = deletePractical.bind(this);
+    this.addSkill = addSkill.bind(this);
     this.state = {
       firstName: "",
       lastName: "",
       email: "",
       phone: "",
-      education: [],
-      practical: [],
-      skills: []
+      education: [<EducationInput id="0edu" key="0edu" deleteEducation={this.deleteEducation} />],
+      practical: [<PracticalInput id="0prac" key="0prac" deletePractical={this.deletePractical} />],
+      skills: ["React", "JavaScript", "HTML", "CSS"]
     };
-    this.updateFirst = updateFirst.bind(this);
-    this.updateLast = updateLast.bind(this);
-    this.updateEmail = updateEmail.bind(this);
-    this.updatePhone = updatePhone.bind(this);
   };
 
   
@@ -39,6 +46,11 @@ class App extends Component {
           updateLast = {this.updateLast}
           updateEmail = {this.updateEmail}
           updatePhone = {this.updatePhone}
+          addEducation = {this.addEducation}
+          addPractical = {this.addPractical}
+          deleteEducation = {this.deleteEducation}
+          deletePractical = {this.deletePractical}
+          addSkill = {this.addSkill}
         />
         <ResumeComponent 
           firstName={this.state.firstName}

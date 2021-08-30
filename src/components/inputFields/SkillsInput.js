@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 import InputField from "./InputField"
+import ReactButton from "./ReactButton";
 
 class SkillsInput extends Component {
+
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
             <div className="inputComponent">
-                <InputField type="text" inputClass="smallInput" labelClass="label" label="Skills: " />
+                <div className="dateSection" >
+                    <InputField type="text" inputClass="smallInput" labelClass="label" label="Skills: " />
+                    <ReactButton className="addSkill" textContent="Add +" onClick={this.props.addSkill} />
+                </div>
                 <ul>
-                    <li>ReactJS</li>
-                    <li>JavaScript</li>
-                    <li>C++</li>
+                    {this.props.skills.map( (skill, i) => {
+                        return <li key={i}>{skill}</li>
+                    })}
                 </ul>
             </div>
         );

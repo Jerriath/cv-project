@@ -23,14 +23,13 @@ class FormComponent extends Component {
                     updatePhone={this.props.updatePhone}
                 />
                 <h1 className="subtitle">Education Info</h1>
-                <EducationInput />
-                <ReactButton textContent="Add +" />
+                {this.props.education}
+                <ReactButton className="addField" textContent="Add +" onClick={this.props.addEducation} />
                 <h1 className="subtitle">Practical Info</h1>
-                <PracticalInput />
-                <ReactButton textContent="Add +" />
+                {this.props.practical}
+                <ReactButton className="addField" textContent="Add +" onClick={this.props.addPractical} />
                 <h1 className="subtitle">Additional Skills</h1>
-                <SkillsInput />
-                <ReactButton textContent="Add +" />
+                <SkillsInput skills={this.props.skills} addSkill={this.props.addSkill} />
             </div>
         );
     }

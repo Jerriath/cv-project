@@ -4,6 +4,9 @@ import styles from "./outputStyles.css";
 class EducationOutput extends Component {
 
     render() {
+
+        //Before returning, create a new array which maps the education array to a new jsx element. The return method will then return this array of elements
+
         return (
             <div className="educationBlock">
                 <div className="eduLeft">

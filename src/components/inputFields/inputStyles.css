@@ -22,6 +22,37 @@
 .addField:hover {
     border: 1px solid black;
 }
+.addSkill {
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+    background-color: rgba(25, 0, 247, 0.3);
+    border: none;
+    cursor: pointer;
+    margin: auto 0;
+    box-shadow: 2px 2px 2px grey;
+    border: 1px solid grey;
+}
+
+.addSkill:hover {
+    border: 1px solid black;
+}
+
+.deleteField {
+    height: 30px;
+    width: 100px;
+    font-size: 25px;
+    background-color: rgba(248, 43, 43, 0.438);
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px grey;
+    border: 1px solid grey;
+    margin: auto 0;
+}
+
+.deleteField:hover{
+    border: 1px solid black;
+}
 
 
 
@@ -60,6 +91,7 @@
 
 .inputField {
     margin-bottom: 10px;
+    width: 80%;
 }
 
 .dateSection {
@@ -70,7 +102,7 @@
 }
 
 .dateInput {
-    width: 100%;
+    width: 90%;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -113,14 +145,31 @@
 
 .formComp {
     width: 45%;
-    height: auto;
+    height: 96%;
     position: relative;
     left: 0;
     margin-left: 50px;
     margin-bottom: auto;
     background-color: rgba(7, 0, 59, 0.2);
     border-radius: 20px;
-    padding: 20px;
+    padding: 1%;
+    overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 li {

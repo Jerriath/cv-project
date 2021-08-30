@@ -8,7 +8,7 @@ class ReactButton extends Component {
 
     render() {
         return (
-            <button className="addField">{this.props.textContent}</button>
+            <button className={this.props.className} onClick={this.props.onClick} >{this.props.textContent}</button>
         );
     };
     
