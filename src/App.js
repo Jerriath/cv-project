@@ -4,8 +4,7 @@ import EducationInput from "./components/inputFields/EducationInput";
 import PracticalInput from "./components/inputFields/PracticalInput";
 import styles from "./appStyles.css";
 import React, { Component } from "react";
-import { updateFirst, updateLast, updateEmail, updatePhone, addEducation, addPractical, deleteEducation, deletePractical, addSkill } from "./updateFunctions";
-import { render } from "@testing-library/react";
+import { updateFirst, updateLast, updateEmail, updatePhone, addEducation, addPractical, deleteEducation, deletePractical, addSkill } from "./helperFunctions";
 
 class App extends Component {
 
@@ -35,7 +34,6 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state.firstName);
     return (
       <div className="page">
         <FormComponent 

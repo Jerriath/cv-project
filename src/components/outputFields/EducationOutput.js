@@ -1,12 +1,20 @@
 import React, { Component } from "react";
+import { extractEduInfo } from "../../helperFunctions";
 import styles from "./outputStyles.css";
 
 class EducationOutput extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
-
-        //Before returning, create a new array which maps the education array to a new jsx element. The return method will then return this array of elements
-
+        let inputs = (document.getElementById(this.props.item.props.id));
+        if (inputs === null || inputs != null) {
+            return <div></div>;
+        }
+        inputs = extractEduInfo(inputs);
+        console.log(inputs);
         return (
             <div className="educationBlock">
                 <div className="eduLeft">

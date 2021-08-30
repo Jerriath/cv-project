@@ -22,7 +22,9 @@ class Resume extends Component {
                     phone={this.props.phone}
                 />
                 <h2 className="sectionTitle">Education</h2>
-                <EducationOutput />
+                {this.props.education.map( (item, index ) => {
+                    return <EducationOutput key={index + "EduOut"} item={item} />
+                })}
                 <hr className="line" />
                 <h2 className="sectionTitle">Work Experience</h2>
                 <PracticalOutput />

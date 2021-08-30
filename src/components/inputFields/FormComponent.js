@@ -13,6 +13,7 @@ class FormComponent extends Component {
     }
 
     render() {
+        //I want to change the education (and practical) arrays into arrays of js objects and then map those into react components when rendering
         return (
             <div className="formComp">
                 <h1 className="subtitle">General Info</h1>

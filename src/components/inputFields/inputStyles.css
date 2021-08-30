@@ -29,7 +29,8 @@
     background-color: rgba(25, 0, 247, 0.3);
     border: none;
     cursor: pointer;
-    margin: auto 0;
+    margin: 18px 0;
+    margin-right: 10px;
     box-shadow: 2px 2px 2px grey;
     border: 1px solid grey;
 }
@@ -52,6 +53,22 @@
 
 .deleteField:hover{
     border: 1px solid black;
+}
+
+.deleteSkill {
+    height: 25px;
+    width: 85px;
+    font-size: 20px;
+    background-color: rgba(248, 43, 43, 0.438);
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px grey;
+    border: 1px solid grey;
+    margin: auto 0;
+}
+
+.deleteSkill:hover {
+    border: 1px solid darkslategrey;
 }
 
 
@@ -174,4 +191,8 @@
 
 li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    margin: 0;
 }

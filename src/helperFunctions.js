@@ -24,15 +24,19 @@ export function updatePhone(e) {
 export function addEducation() {
     let length = this.state.education.length;
     let newEducation = <EducationInput id={length + "edu"} key={length + "edu"} deleteEducation={this.deleteEducation} />;
+    console.log(newEducation.props.id);
     this.setState({education: this.state.education.concat(newEducation)});
 }
 
 export function deleteEducation(e) {
     let index = parseInt(e.target.parentNode.parentNode.id.charAt(0));
     let newArray = JSON.parse(JSON.stringify(this.state.education));
-    newArray.splice(index, 1);
-    for (let i = index; i < newArray.length; i++) {
-        newArray[i] = <EducationInput id={i + "edu"} key={i + "edu"} deleteEducation={this.deleteEducation} />;
+    this.setState({education: null});
+    let length = newArray.length;
+    newArray.splice(index);
+    for (let i = index; i < length - 1; i++) {
+        let nextInput = <EducationInput id={i + "edu"} key={i + "edu"} deleteEducation={this.deleteEducation} />;
+        newArray.push(nextInput);
     }
     this.setState({education: newArray})
 }
@@ -57,4 +61,8 @@ export function addSkill(e) {
     let newSkill = e.target.parentNode.firstChild.children[1].value;
     e.target.parentNode.firstChild.children[1].value = "";
     this.setState({skills: this.state.skills.concat(newSkill)})
+}
+
+export function extractEduInfo(inputs) {
+    let organization = inputs;
 }
