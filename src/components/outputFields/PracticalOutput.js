@@ -4,24 +4,48 @@ import styles from "./outputStyles.css";
 class PracticalOutput extends Component {
 
     render() {
-        return (
-            <div className="practicalBlock">
-                <div className="pracLeft">
-                    <h3 className="sectionSubtitle">Restaurant Server</h3>
-                    <p className="sectionContent">Gyu-Kaku</p>
-                    <p className="jobDescription">
-                        Worked at this restaurant for approximately three months during time off from university. Was responsible for fulfilling customer requests, 
-                        running food, preparing tables, cleaning, and other miscellenious tasks. Always portrayed a professional attitude to customers and managers,
-                        as well as displaying an accomidating personality to improve customer as well as coworker experience.
-                    </p>
+        let inputs = (document.getElementById(this.props.item.props.id));
+        console.log(inputs);
+        let date = null;
+        if (inputs !=null) {
+            let extractPractInfo = this.props.extractPractInfo;
+            inputs = extractPractInfo(inputs);
+            if (inputs.ongoing) {
+                date = inputs.from.toLocaleDateString("en-US") + " - present";
+            }
+            else {
+                date = inputs.from + " - " + inputs.to;
+            }
+        }
+        if (inputs != null) {
+            return (
+                <div className="practicalBlock">
+                    <div className="pracLeft">
+                        <h3 className="sectionSubtitle">{inputs.occupation}</h3>
+                        <p className="sectionContent">{inputs.company}</p>
+                        <p className="jobDescription">{inputs.description}</p>
+                    </div>
+                    <div className="pracRight">
+                        <p className="sectionContent">{date}</p>
+                    </div>
                 </div>
-                <div className="pracRight">
-                    <p className="sectionContent">Aug. 2017 - Aug. 2021</p>
+            );
+        }
+        else {
+            return (
+                <div className="practicalBlock">
+                    <div className="pracLeft">
+                        <h3 className="sectionSubtitle"></h3>
+                        <p className="sectionContent"></p>
+                        <p className="jobDescription"></p>
+                    </div>
+                    <div className="pracRight">
+                        <p className="sectionContent"></p>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
     };
-
 }
 
 export default PracticalOutput;

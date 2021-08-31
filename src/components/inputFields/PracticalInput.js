@@ -13,6 +13,9 @@ class PracticalInput extends Component {
             <div className="inputComponent" id={this.props.id} key={this.props.id}>
                 <InputField type="text" inputClass="smallInput" labelClass="label" label="Occupation / Position: "/>
                 <InputField type="text" inputClass="smallInput" labelClass="label" label="Company / Organization: "/>
+                <label className="label">Description: </label>
+                <br></br>
+                <textarea className="textBox" rows="5" cols="45"></textarea>
                 <div className="dateSection" >
                     <InputField inputClass="dateInput" type="date" labelClass="label" label="From: " />
                     <InputField inputClass="dateInput" type="date" labelClass="label" label="To: " />

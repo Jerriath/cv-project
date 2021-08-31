@@ -17,6 +17,7 @@
     margin-left: 10%;
     box-shadow: 2px 2px 2px grey;
     border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .addField:hover {
@@ -33,6 +34,7 @@
     margin-right: 10px;
     box-shadow: 2px 2px 2px grey;
     border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .addSkill:hover {
@@ -49,6 +51,7 @@
     box-shadow: 2px 2px 2px grey;
     border: 1px solid grey;
     margin: auto 0;
+    border-radius: 5px;
 }
 
 .deleteField:hover{
@@ -106,6 +109,18 @@
     box-shadow: 2px 2px 2px grey;
 }
 
+.textBox {
+    height: 120px;
+    width: 79%;
+    background-color: rgb(230, 230, 230);
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px grey;
+}
+
 .inputField {
     margin-bottom: 10px;
     width: 80%;
@@ -133,7 +148,7 @@
     height: 25px;
     width: 25px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid grey;
     position: relative;
     top: 6px;
@@ -152,6 +167,24 @@
     flex-direction: row;
     align-items: center;
     margin-top: 7px;
+}
+
+
+
+
+
+/*Section deals with styling the skills section*/
+.listItem {
+    max-width: 100px;
+    min-width: 50px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.listContents {
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -191,8 +224,18 @@
 
 li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: list-item !important;
 }
 
 ul {
+    margin: 0;
+}
+
+ul li::marker {
+    color: black;
+    font-size: 1.5em;
+}
+
+p {
     margin: 0;
 }

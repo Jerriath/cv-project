@@ -17,9 +17,11 @@ class SkillsInput extends Component {
                 </div>
                 <ul>
                     {this.props.skills.map( (skill, i) => {
-                        return <li key={i}>
-                                {skill}
-                                <ReactButton className="deleteSkill" textContent="Delete" onCLick={this.props.deleteSkill} />
+                        return <li key={i} id={i}>
+                                <div className="listContents">
+                                    <p className="listItem">{skill}</p>
+                                    <ReactButton className="deleteSkill" textContent="Delete" onClick={this.props.deleteSkill} />
+                                </div>
                             </li>
                     })}
                 </ul>

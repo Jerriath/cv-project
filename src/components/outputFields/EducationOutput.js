@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { extractEduInfo } from "../../helperFunctions";
 import styles from "./outputStyles.css";
 
 class EducationOutput extends Component {
@@ -10,24 +9,44 @@ class EducationOutput extends Component {
 
     render() {
         let inputs = (document.getElementById(this.props.item.props.id));
-        if (inputs === null || inputs != null) {
-            return <div></div>;
+        let date = null;
+        if (inputs !=null) {
+            let extractEduInfo = this.props.extractEduInfo;
+            inputs = extractEduInfo(inputs);
+            if (inputs.ongoing) {
+                date = inputs.from.toLocaleDateString("en-US") + " - present";
+            }
+            else {
+                date = inputs.from + " - " + inputs.to;
+            }
         }
-        inputs = extractEduInfo(inputs);
-        console.log(inputs);
-        return (
-            <div className="educationBlock">
-                <div className="eduLeft">
-                    <h3 className="sectionSubtitle">Bachelor's in Computer Science</h3>
-                    <p className="sectionContent">University of Florida</p>
+        if (inputs != null) {
+            return (
+                <div className="educationBlock">
+                    <div className="eduLeft">
+                        <h3 className="sectionSubtitle">{inputs.certificate}</h3>
+                        <p className="sectionContent">{inputs.organization}</p>
+                    </div>
+                    <div className="eduRight">
+                        <p className="sectionContent">{date}</p>
+                    </div>
                 </div>
-                <div className="eduRight">
-                    <p className="sectionContent">Aug. 2017 - Aug. 2021</p>
+            );
+        }
+        else {
+            return (
+                <div className="educationBlock">
+                    <div className="eduLeft">
+                        <h3 className="sectionSubtitle"></h3>
+                        <p className="sectionContent"></p>
+                    </div>
+                    <div className="eduRight">
+                        <p className="sectionContent"></p>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
     };
-
 }
 
 export default EducationOutput;
