@@ -14,7 +14,7 @@ class Resume extends Component {
 
     render() {
         return (
-            <div className="resumeComp">
+            <div id="resume" className="resumeComp">
                 <GeneralOutput 
                     firstName={this.props.firstName}
                     lastName={this.props.lastName}

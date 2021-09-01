@@ -10,7 +10,7 @@ class SkillsOutput extends Component {
     render() {
         return (
             <div className="skillsBlock">
-                <ul className="doubleList">
+                <ul id="doubleList" className="doubleList">
                     {this.props.skills.map( (skill) => {
                         return <li>{skill}</li>
                     })}

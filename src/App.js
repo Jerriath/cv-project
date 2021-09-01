@@ -35,8 +35,10 @@ class App extends Component {
     };
   };
 
-  
 
+  printMe() {
+    window.print();
+  }
 
   render() {
     return (

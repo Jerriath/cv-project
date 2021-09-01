@@ -33,6 +33,7 @@ class FormComponent extends Component {
                 <ReactButton className="addField" textContent="Append" onClick={this.props.appendPract} />
                 <h1 className="subtitle">Additional Skills</h1>
                 <SkillsInput skills={this.props.skills} addSkill={this.props.addSkill} deleteSkill={this.props.deleteSkill} />
+                <button id="print" onClick={window.print}>Print</button>
             </div>
         );
     }

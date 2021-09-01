@@ -23,3 +23,15 @@ body {
     width: 100%;
     background-color: rgb(230, 230, 230);
 }
+
+@media print {
+    .formComp {display: none;}
+    #print {display: none;}
+    #resume {
+        height: 880px;
+        width: 680px;
+        margin: auto;
+        box-shadow: none;
+    }
+    #doubleList {column-count: 2;}
+}
