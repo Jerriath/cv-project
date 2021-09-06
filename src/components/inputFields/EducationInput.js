@@ -4,10 +4,6 @@ import ReactButton from "./ReactButton";
 
 class EducationInput extends Component {
 
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div className="inputComponent" id={this.props.id} key={this.props.id}>

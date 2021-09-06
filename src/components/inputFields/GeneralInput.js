@@ -3,10 +3,6 @@ import InputField from "./InputField"
 
 class GeneralInput extends Component {
 
-    constructor(props) {
-        super(props);
-    };
-
     render() {
         return (
             <div className="inputComponent">

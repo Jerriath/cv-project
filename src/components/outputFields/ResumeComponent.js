@@ -8,10 +8,6 @@ import styles from "./outputStyles.css";
 
 class Resume extends Component {
 
-    constructor(props) {
-        super(props);
-    };
-
     render() {
         return (
             <div id="resume" className="resumeComp">

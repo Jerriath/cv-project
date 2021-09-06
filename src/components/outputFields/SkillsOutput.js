@@ -3,10 +3,6 @@ import styles from "./outputStyles.css";
 
 class SkillsOutput extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="skillsBlock">

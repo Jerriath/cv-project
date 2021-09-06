@@ -4,10 +4,6 @@ import ReactButton from "./ReactButton";
 
 class SkillsInput extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="inputComponent">

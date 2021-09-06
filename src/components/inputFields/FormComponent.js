@@ -8,10 +8,6 @@ import styles from "./inputStyles.css";
 
 class FormComponent extends Component {
 
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         //I want to change the education (and practical) arrays into arrays of js objects and then map those into react components when rendering
         return (

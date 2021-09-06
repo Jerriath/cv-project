@@ -3,10 +3,6 @@ import styles from "./outputStyles.css";
 
 class EducationOutput extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         let inputs = (document.getElementById(this.props.item.props.id));
         let date = null;
